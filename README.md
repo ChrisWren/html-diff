@@ -37,4 +37,6 @@ This will log any differences between html file paths in the folders as well as 
 
 # Changelog
 
+**0.0.2** - Forgot to add colors as a dependency.
+
 **0.0.1** - Initial release
