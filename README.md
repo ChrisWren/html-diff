@@ -1,7 +1,7 @@
 # html-diff
 > Diff folders of html files to make sure they are the same
 
-[![NPM version](https://badge.fury.io/js/html-diff.png)](http://badge.fury.io/js/html-diff) [![Dependency Status](https://gemnasium.com/ChrisWren/html-diff.png)](https://gemnasium.com/ChrisWren/html-diff)
+[![NPM version](https://badge.fury.io/js/html-diff.png)](http://badge.fury.io/js/html-diff) [![Dependency Status](https://gemnasium.com/ChrisWren/html-diff.png)](https://gemnasium.com/ChrisWren/html-diff) [![Travis Status](https://travis-ci.org/ChrisWren/html-diff.png)](https://travis-ci.org/ChrisWren/html-diff)
 
 ## Installation
 
