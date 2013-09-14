@@ -5,12 +5,14 @@
 
 ## Installation
 
+```bash
 npm install --save html-diff
+```
 
 ## html-diff([folders])
 
 ### folders
-Type: Array of Objects
+Type: `Array` of `Objects`
 
 Array of folder objects to diff. Each object must contain the `path` property to read files from and `name` property to print when diffing.
 
