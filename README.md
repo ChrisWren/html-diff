@@ -23,19 +23,25 @@ Here is an example using `html-diff` to ensure that the outputs from Jade and EJ
 ```js
 var diff = require('html-diff');
 
-diff([{
+if (diff([{
   path: 'EJSOutputFolder',
   name: 'EJS'
 }, {
   path: 'JadeOutputFolder',
   name: 'Jade'
-}]);
+}])) {
+  console.log('No diff found :)');
+} else {
+  console.log('Folders have different contents :(');
+}
 
 ```
 
 This will log any differences between html file paths in the folders as well as differences in the content of html files which have the same path.
 
 # Changelog
+
+**0.0.3** - Added return value to determine the result of the diffing for tests.
 
 **0.0.2** - Forgot to add colors as a dependency.
 
