@@ -6,7 +6,7 @@
 ## Installation
 
 ```bash
-npm install --save html-diff
+npm install --save-dev html-diff
 ```
 
 ## html-diff([folders])
