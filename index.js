@@ -67,10 +67,15 @@ function compareFolders (folder1, folder2) {
   // If no diffs are found, log a sucess message
   if (!anyDiffs) {
     console.log('All files matching.'.green);
+    return true;
+  } else {
+    return false;
   }
 }
 
 module.exports = function (folders) {
+
+  var foldersMatch = true;
 
   _.each(folders, function (folder) {
     folder.files = wrench.readdirSyncRecursive(folder.path)
@@ -84,8 +89,12 @@ module.exports = function (folders) {
   // Compare each folder against each other folder
   .forEach(function (folder, index, folders) {
     for (var i = index + 1; i < folders.length; i++) {
-      compareFolders(folder, folders[i]);
+      if (!compareFolders(folder, folders[i])) {
+        foldersMatch = false;
+      }
     }
   });
+
+  return foldersMatch;
 };
 
