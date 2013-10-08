@@ -44,7 +44,7 @@ function compareFolders (folder1, folder2) {
 
 
       console.log('\n\nDiff for '.blue + file.magenta);
-      console.log('Green is '.green + folder1.name.green + '.'.green + '\nRed is '.red + folder2.name.red + '.\n'.red);
+      console.log('Red is '.red + folder1.name.red + '.\n'.red + 'Green is '.green + folder2.name.green + '.\n'.green);
 
       // Print the differences between the files
       diff.forEach(function (templateDiff, i, diffs) {
