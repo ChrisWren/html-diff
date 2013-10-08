@@ -1,6 +1,6 @@
 {
   "name": "html-diff",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Diffs folders of .html files to make sure they are the same",
   "main": "index.js",
   "scripts": {
